@@ -1,0 +1,24 @@
+{
+  "name": "is-integer-string",
+  "version": "0.0.0",
+  "description": "Checks if a String Represents an Integer. Support for Numeric Separators and Commas!",
+  "main": "is-integer-string.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielJDufour/is-integer-string.git"
+  },
+  "keywords": [
+    "integer",
+    "number",
+    "string"
+  ],
+  "author": "Daniel J. Dufour",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/DanielJDufour/is-integer-string/issues"
+  },
+  "homepage": "https://github.com/DanielJDufour/is-integer-string#readme"
+}
