@@ -15,7 +15,7 @@ npm install is-integer-string
 ```
 
 # usage
-```
+```js
 import isIntegerString from 'is-integer-string';
 
 const result = isIntegerString('1_234.00');
@@ -23,5 +23,21 @@ const result = isIntegerString('1_234.00');
 
 const result = isIntegerString('-0.3');
 // result is false
+```
+
+# advanced usage
+Pass in an options object with debug set to true for increased logging
+```js
+const options = { debug: true };
+isIntegerString('1234.567', options);
+```
+This will generate the following output:
+```
+[is-integer-string] str: 1234.567
+[is-integer-string] debug: true
+[is-integer-string] parts: [ '1234', '567' ]
+[is-integer-string] left: 1234
+[is-integer-string] right: 567
+[is-integer-string] the right side of the decimal contains invalid character(s): [ '5', '6', '7' ]
 ```
 
