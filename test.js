@@ -34,3 +34,5 @@ checkFalse("-0.00400");
 checkFalse("-0.400");
 checkFalse("-0.");
 checkFalse("-0.3");
+
+console.log("tests passed");
