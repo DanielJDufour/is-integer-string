@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "Checks if a String Represents an Integer. Support for Numeric Separators and Commas!",
   "main": "is-integer-string.js",
+  "files": [
+    "is-integer-string.js"
+  ],
   "scripts": {
     "test": "node test.js"
   },
