@@ -21,8 +21,12 @@ checkTrue("0.00000");
 checkTrue("-0.00000");
 checkTrue("+10");
 checkTrue("1_234.00");
+checkTrue(" 10");
+checkTrue("1234e5");
 
-checkFalse(8, { debug: false });
+checkFalse(null);
+checkFalse(undefined);
+checkFalse(8);
 checkFalse("1,123.02");
 checkFalse("129123xasdfa");
 checkFalse("-0.00400");
