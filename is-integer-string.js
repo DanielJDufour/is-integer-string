@@ -13,8 +13,8 @@ const isIntegerString = (str, options) => {
   str = str.trim();
 
   if (str.length === 0) return false;
-  if (!str.match(/^[-+\d._,e]/)) {
-    const bad_chars = Array.from(str).filter(char => !char.match(/^[-+\d._,e]$/));
+  if (!str.match(/^[-+\d._,eE]/)) {
+    const bad_chars = Array.from(str).filter(char => !char.match(/^[-+\d._,eE]$/));
     if (debug) console.log("[is-integer-string] input contains invalid character(s):", bad_chars);
     return false;
   }
@@ -43,8 +43,8 @@ const isIntegerString = (str, options) => {
   }
   if (right && str.match(/(.[0-9]*[1-9]+[0-9]*)$/)) return false;
 
-  if (left && !left.match(/^[-+\d_,e]*$/)) {
-    const bad_chars = Array.from(left).filter(char => !char.match(/^[-+\d_,e]$/));
+  if (left && !left.match(/^[-+\d_,eE]*$/)) {
+    const bad_chars = Array.from(left).filter(char => !char.match(/^[-+\d_,eE]$/));
     if (debug) console.log("[is-integer-string] the left side of the decimal contains invalid character(s):", bad_chars);    
     return false;    
   }

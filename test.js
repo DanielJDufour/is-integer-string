@@ -23,6 +23,7 @@ checkTrue("+10");
 checkTrue("1_234.00");
 checkTrue(" 10");
 checkTrue("1234e5");
+checkTrue("1234E5");
 
 checkFalse(null);
 checkFalse(undefined);
